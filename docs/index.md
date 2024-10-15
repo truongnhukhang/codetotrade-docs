@@ -1,9 +1,9 @@
 # Introduction
 <div class="result" markdown>
 ![Logo](assets/images/logo.png){ align=left width="200" }
-CodeToTrade is a coin trading plaform . which is support back test , paper trading , real trade on support exchange . It is written by Java and complie to native application for supported OS (Windows , Linux , MacOS ) by GraalVM . 
+CodeToTrade is a comprehensive coin trading platform that supports backtesting, paper trading, and real trading on supported exchanges. It is developed in Java and compiled into native applications for various operating systems (Windows, Linux, macOS) using GraalVM.
 </div>
-The app was born with a mission to provide a platform where anyone can easily build their own trading bot.
+The platform was created with the mission to empower anyone to easily build, test, and deploy their own trading bots. 
 
 ## The Overview
 
