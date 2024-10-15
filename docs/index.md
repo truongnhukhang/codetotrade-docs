@@ -26,7 +26,7 @@ Your primary task is to implement the logic that answers these questions using y
 
 To more advanced or AI-driven approaches:
 
-- Should we sell at this candle? => "Hey ChatGPT, here are the last 100 BTC price candles. Should I sell now?"
+- Should we sell at this candle? => "Hey ChatGPT, here are the last 100 candles of btc close price. Should I sell now?"
 
 Your job is to create the strategy that drives these decisions.
 
