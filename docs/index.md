@@ -28,24 +28,6 @@ The **BotController** serves as the primary interface that links market data wit
 #### 2. **BotClient**
 The **BotClient** is a critical part of the architecture responsible for providing trading advice to the **BotController** based on the data it receives. It is your responsibility to design and implement the **BotClient** to respond effectively to the queries made by the **BotController**. 
 
-The **BotClient** can be designed to leverage different strategies, ranging from simple technical analysis to more advanced AI-based approaches. Examples of decision-making logic include:
-
-- **Technical Analysis**:  
-  - **Should we buy at this candle?**  
-    - If the Relative Strength Index (RSI) is below 30, the answer could be: **Yes, let's buy.**
-
-- **Advanced AI or Data-Driven Methods**:  
-  - **Should we sell at this candle?**  
-    - For example: "Hey ChatGPT, here are the last 100 BTC candle prices. Should I sell now?"
-
-Your primary task is to create a **BotClient** that can process the normalized market data from the **BotController** and provide actionable advice on trading decisions. The logic for this advice can be implemented using various methodologies, including but not limited to:
-
-- **Technical Indicators** (e.g., RSI, MACD, moving averages)
-- **Machine Learning Models** (e.g., price predictions based on historical data)
-- **AI Models** for pattern recognition or anomaly detection in market trends.
-
-Each decision made by the **BotClient** should be communicated back to the **BotController**, which will then handle the execution of trades based on the strategy you've implemented.
-
 #### Example for Bot Client
 ```Python
 class MyFirstBot(BaseBot):
@@ -80,3 +62,5 @@ CodeToTrade.app does not provide any financial or trading advice. All trading de
 Additionally, no software is released without bugs, including ours. We cannot guarantee that the platform will function flawlessly over time. By using CodeToTrade.app, you acknowledge that any financial losses resulting from bugs, errors, or trading decisions are your responsibility, not ours. 
 
 **Use this platform at your own risk, and we disclaim all liability for financial losses.**
+
+## Thank you

@@ -11,13 +11,7 @@
 
     `git clone https://github.com/truongnhukhang/codetotrade-java-example.git`
 
-- Compile and run bot
-
-    ```bash
-    mvn compile    
-    mvn package    
-    java -jar target/my-first-bot.jar
-    ```
+- Follow readMe and run bot
 
 ### Python
 
