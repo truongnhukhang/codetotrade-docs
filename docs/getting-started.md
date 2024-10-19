@@ -1,29 +1,27 @@
 # Getting started
 
-## Write your first bot
+## Step 1 : Run the bot server 
 
-### Java
+After install and run you should access the codetotrade application via localhost:8080
+![App Screenshot](assets/images//app-2.png)
 
-- Install
-    - Java 21+
-    - Maven
-- Check out example bot
+## Step 2:  Run the bot client
 
-    `git clone https://github.com/truongnhukhang/codetotrade-java-example.git`
+### Checkout and Follow read me 
+=== "Java"
+        https://github.com/truongnhukhang/codetotrade-java-example.git
+=== "Python"
+        https://github.com/truongnhukhang/codetotrade-python-example.git
 
-- Follow readMe and run bot
+You can run from command line or Use IDE to start the main file (Inteliji or PyCharm Communitiy)
 
-### Python
+![PyCommunity](assets/images//py-community.png)
 
-- Install
+## Step 3 :  Run The Back Test
 
-    Python 3.11 or 3.12 ( not 3.13)
-
-- Check out example bot
-    `git clone https://github.com/truongnhukhang/codetotrade-python-example.git`
-
-- Run bot
-
-    ```bash
-    python main.py
-    ```
+### Create a back test request
+- Go to : http://localhost:8080/backtest/create
+- Keep Exchange Config default 
+- Inuput Algorithm Config same as below picture  
+![algo-config](assets/images/algorithm-config.png)
+- Then click submit 
