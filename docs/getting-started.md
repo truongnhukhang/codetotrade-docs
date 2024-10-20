@@ -1,8 +1,10 @@
 # Getting started
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mvMNFfPJteU?si=oh35sflCBp18V8Gt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Step 1 : Run the bot server 
 
-After install and run you should access the codetotrade application via localhost:8080
+After [Install](/installation) and run you should access the codetotrade application via localhost:8080
 ![App Screenshot](assets/images//app-2.png)
 
 ## Step 2:  Run the bot client
@@ -24,4 +26,8 @@ You can run from command line or Use IDE to start the main file (Inteliji or PyC
 - Keep Exchange Config default 
 - Inuput Algorithm Config same as below picture  
 ![algo-config](assets/images/algorithm-config.png)
-- Then click submit 
+- Then submit
+
+## Step 4 :  View result
+- Go to : http://localhost:8080/backtest/collection
+
