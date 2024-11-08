@@ -7,7 +7,7 @@
 After [Install](/installation) and run you should access the codetotrade application via localhost:8080
 ![App Screenshot](assets/images//app-2.png)
 
-## Step 2:  Run the bot client
+## Step 2 :  Run the bot client
 
 ### Checkout and Follow read me 
 === "Java"
