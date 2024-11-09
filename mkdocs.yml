@@ -4,7 +4,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/code
-  favicon: fontawesome/solid/code
+  favicon: assets/images/logo.png
   features:
     - navigation.expand
     - navigation.path

@@ -15,6 +15,8 @@ Download the zip file from [CodeToTrade Windows Installer](https://codetotrade.a
 chmod +x codetotrade-pro
 ./codetotrade-pro
 ```
+You may need to allow the app in the security settings of your mac.
+
 2. Go to localhost:8080 to use the app
 
 ### Linux
@@ -24,6 +26,14 @@ chmod +x codetotrade-pro
 ./codetotrade-pro
 ```
 2. Go to localhost:8080 to use the app
+
+### Docker
+1. Install Docker
+2. Run the following command to start the app
+```Bash
+docker run -p 8080:8080 -v .:/home/codetotrade/.codetotrade -d codetotrade/codetotrade-pro:v1
+```
+3. Go to localhost:8080 to use the app
 
 
 

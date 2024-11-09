@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td>Coin</td>
-    <td>The trading pair/symbol to backtest (e.g. BTC/USDT)</td>
+    <td>The trading pair/symbol to backtest (e.g. BTCUSDT)</td>
   </tr>
   <tr>
     <td>Main candle interval</td>
@@ -58,7 +58,7 @@
   </tr>
   <tr>
     <td>Bot path</td>
-    <td>The address of the bot client (e.g. localhost:8888)</td>
+    <td>The address of the bot client (e.g. localhost:8888 or host.docker.internal:8888)</td>
   </tr>
   <tr>
     <td>Prefetch bar</td>
@@ -74,7 +74,7 @@
   </tr>
   <tr>
     <td>Indicator params</td>
-    <td>Indicator parameters (e.g. period, source) . The BotClient will receive this params as [key,value] type when it init. example : </br> 
+    <td>Indicator parameters (e.g. period, source) . The BotClient will receive this params as parameter in init method. example : </br> 
 
      ```python
      def init(self, config: Dict[str, str]) -> None: 
