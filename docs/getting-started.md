@@ -4,7 +4,7 @@
 
 ## Step 1 : Run the bot server 
 
-After [Install](/installation) and run you should access the codetotrade application via localhost:8080
+After [Install](/Installation) and run you should access the codetotrade application via localhost:8080
 ![App Screenshot](assets/images//app-2.png)
 
 ## Step 2 :  Run the bot client
