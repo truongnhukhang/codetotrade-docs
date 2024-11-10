@@ -1,4 +1,0 @@
-# Back Test architecture
-
-## Concept
-
