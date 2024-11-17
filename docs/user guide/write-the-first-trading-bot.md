@@ -273,7 +273,7 @@ Fristly . You need swap back_test_server to the exchange server and run the bot.
         main()
     ```
 
-Then go to the exchange page in the UI and run the bot `http://localhost:8080/online/create` . 
+Then go to the exchange page in the UI and run the bot `http://localhost:8080/online/create` 
 
 Exchange Config same as below picture ( nothing much different with back test config except we dont have date range )
 
@@ -282,3 +282,10 @@ Exchange Config same as below picture ( nothing much different with back test co
 The Algorithm Config is the same when we run the back testing
 
 ![algorithm-config](../assets/images/example/macd-config.png)
+
+## Appendix
+### Source code
+=== "Java"
+    https://github.com/truongnhukhang/codetotrade-java-example.git
+=== "Python"
+    https://github.com/truongnhukhang/codetotrade-python-example.git
