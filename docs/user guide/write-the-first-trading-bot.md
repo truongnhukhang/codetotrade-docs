@@ -1,5 +1,5 @@
 # Write the first trading bot
-In this guide, i will show you how to easily to create your own trading bot.
+In this guide.  We will go though from trading idea to an executable bot . Evaluate the bot performance base on back test . And finally run the bot in real exchange .
 
 ## Step 1 : Find the trading idea
 
