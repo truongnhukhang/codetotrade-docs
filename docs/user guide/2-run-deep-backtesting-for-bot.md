@@ -46,7 +46,7 @@ In deep backtesting, the algorithm's parameters are varied systematically to cre
 
 ## How It Works
 
-### Deep (overfit) back testing example 
+### Run a deep back testing
 
 **Exchange** : Binance Future
 
@@ -76,8 +76,14 @@ The application runs a backtest for each combination and records the results, in
 
 Running over 17,000 backtest cases gives us a clear picture of how well the algorithm performs in different situations.
 
-If most backtests show positive results, like good profits and manageable losses, the algorithm is likely strong and reliable. But if the results are mostly negative or inconsistent, it may need changes or further testing to improve.![overfit-test-rs](../assets/images/deepbacktest-rs.png)
+If most backtests show positive results, like good profits and manageable losses, the algorithm is likely strong and reliable. But if the results are mostly negative or inconsistent, it may need changes or further testing to improve.
 
+![overfit-test-rs](../assets/images/deepbacktest-rs.png)
+
+### Performance
+How long does it take to run 17,000 backtests? On my machine (Core i9 12900K, 32GB RAM) with 6 workers allocated, it took about 10 minutes to complete.
+
+The performance depends on how efficiently the algorithm is designed and the programming language used for implementation. Typically, Java performs better than Python in terms of execution speed.
 
 ## Benefits of Deep Backtesting
 
@@ -89,3 +95,8 @@ If most backtests show positive results, like good profits and manageable losses
 ## Conclusion
 
 Deep backtesting is a powerful tool for traders looking to maximize the potential of their trading algorithms. By systematically exploring various parameter combinations, it ensures a robust and well-optimized strategy, ready to tackle the dynamic nature of financial markets.
+
+## Appendix
+### Source code
+=== "Java"
+[MacdOverfitTestBot](https://github.com/truongnhukhang/codetotrade-java-example/blob/master/src/main/java/coin/algorithm/example/bot/MyMacdOverfitTestBot.java)
