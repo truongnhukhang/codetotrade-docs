@@ -58,7 +58,7 @@ In deep backtesting, the algorithm's parameters are varied systematically to cre
 
 **Date to**: 2024-11-21 .
 
-Users provide the parameter lists through an input field, e.g., `indicator_params`. The application automatically generates and tests all combinations.
+Users provide the parameter lists through  `indicator params` input field. The application automatically generates and tests all combinations.
 ![overfit-test](../assets/images/deepbacktest.png)
 
 > The deep backtesting application generates all possible combinations of the given parameter values. For instance:
