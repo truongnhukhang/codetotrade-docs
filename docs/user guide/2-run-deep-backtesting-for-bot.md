@@ -36,37 +36,48 @@ For demonstration, consider the following simple trading algorithm:
 
 In deep backtesting, the algorithm's parameters are varied systematically to create a comprehensive set of test cases. The parameters and their respective possible values for this algorithm are as follows:
 
-- **MACD Fast Period (`fast`)**: `12, 17, 19, 9, 25, 34, 49, 43, 55`
-- **MACD Slow Period (`slow`)**: `12, 17, 19, 9, 25, 34, 49, 43, 55`
-- **RSI Period (`rsi`)**: `14, 33, 21, 43`
-- **Stop-Loss Percentage (`sl`)**: `0.2, 0.3, 0.4, 0.5, 0.6`
-- **Take-Profit Percentage (`tp`)**: `0.2, 0.3, 0.4, 0.5, 0.6`
+- **MACD Fast Period (`fast`)**: `9,12,17,19,25,34`
+- **MACD Slow Period (`slow`)**: `34,49,43,55,89`
+- **MACD Signal Period (`signal`)**: `9,11,17,23`
+- **RSI Period (`rsi`)**: `14,33,21,43`
+- **Stop-Loss Percentage (`sl`)**: `2,3,4,5,6,7`
+- **Take-Profit Percentage (`tp`)**: `2,3,4,5,6,7`
 
 
 ## How It Works
 
-The deep backtesting application generates all possible combinations of the given parameter values. For instance:
+### Deep (overfit) back testing example 
 
-1. **Combination 1**: `fast=12, slow=12, rsi=14, sl=0.2, tp=0.2`
-2. **Combination 2**: `fast=12, slow=12, rsi=14, sl=0.2, tp=0.3`
-3. **Combination 3**: `fast=12, slow=12, rsi=14, sl=0.2, tp=0.4`
+**Exchange** : Binance Future
+
+**Coin** : BTCUSDT 
+
+**Main** candle interval : 15m 
+
+**Date from**: 2024-01-01 
+
+**Date to**: 2024-11-21 .
+
+Users provide the parameter lists through an input field, e.g., `indicator_params`. The application automatically generates and tests all combinations.
+![overfit-test](../assets/images/deepbacktest.png)
+
+> The deep backtesting application generates all possible combinations of the given parameter values. For instance:
+>
+1. **Combination 1**: `fast=9, slow=34, rsi=14, sl=2, tp=3`
+2. **Combination 2**: `fast=9, slow=34, rsi=14, sl=2, tp=3`
+3. **Combination 3**: `fast=9, slow=34, rsi=14, sl=2, tp=4`
 4. ...
-5. **Combination N**: `fast=55, slow=55, rsi=43, sl=0.6, tp=0.6`
-
+5. **Combination N**: `fast=34, slow=89, rsi=43, sl=2, tp=6`
+>
 The application runs a backtest for each combination and records the results, including metrics such as profit and loss (PNL), win rate, drawdowns, and more.
-
-### Input and Output
-
-1. **Input**:  
-   Users provide the parameter lists through an input field, e.g., `indicator_params`. The application automatically generates and tests all combinations.
-   ![overfit-test](../assets/images/deepbacktest.png)
-2. **Output**:
-    - Results for each parameter combination.
-    - Summary metrics reflecting the algorithm's overall performance.
+>
 
 ### Interpretation of Results
 
-If most backtests yield positive PNL, the algorithm can be considered robust. However, if the performance is inconsistent or mostly negative, the algorithm may require modifications or further analysis.
+Running over 17,000 backtest cases gives us a clear picture of how well the algorithm performs in different situations.
+
+If most backtests show positive results, like good profits and manageable losses, the algorithm is likely strong and reliable. But if the results are mostly negative or inconsistent, it may need changes or further testing to improve.![overfit-test-rs](../assets/images/deepbacktest-rs.png)
+
 
 ## Benefits of Deep Backtesting
 
