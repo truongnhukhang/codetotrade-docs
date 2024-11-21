@@ -61,6 +61,26 @@ In deep backtesting, the algorithm's parameters are varied systematically to cre
 Users provide the parameter lists through  `indicator params` input field. The application automatically generates and tests all combinations.
 ![overfit-test](../assets/images/deepbacktest.png)
 
+**Important** : You need to get the right value for each parameter in the `init` function.
+```java
+@Override
+public void init(Map<String, String> config) {
+   BarSeries series = getBarSeries(); 
+   ClosePriceIndicator closePrice = new ClosePriceIndicator(series);
+   
+   int rsiPeriod = Integer.parseInt(config.get("rsi"));
+   int slow = Integer.parseInt(config.get("slow"));
+   int fast = Integer.parseInt(config.get("fast"));
+   int signalPeriod = Integer.parseInt(config.get("signal"));
+   this.tp = Double.parseDouble(config.get("tp"));
+   this.sl = Double.parseDouble(config.get("sl"));
+   
+   this.rsi = new RSIIndicator(closePrice, rsiPeriod);
+   this.macd = new MACDIndicator(closePrice, fast, slow);
+   this.signal = new EMAIndicator(macd, signalPeriod);
+}
+```
+
 > The deep backtesting application generates all possible combinations of the given parameter values. For instance:
 >
 1. **Combination 1**: `fast=9, slow=34, rsi=14, sl=2, tp=3`
