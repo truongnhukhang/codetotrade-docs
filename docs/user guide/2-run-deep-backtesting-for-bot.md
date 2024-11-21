@@ -1,4 +1,4 @@
-# Run the Deep(Overfit) Backtesting
+# Run the Deep (Overfit) Backtesting
 
 ## Overview
 
@@ -7,10 +7,14 @@ Deep backtesting, also known as overfit backtesting, is a technique used to eval
 ### Why Use Deep Backtesting?
 
 When designing a trading algorithm, fixed parameters may not fully capture the algorithm's potential or limitations. By systematically testing multiple combinations of parameters, deep backtesting helps:
-- Uncover the best-performing parameter sets.
-- Assess the robustness of the trading strategy across different market conditions.
-- Detect overfitting by evaluating consistency in performance.
-- Identify opportunities to refine the algorithm for better outcomes.
+
+   - Uncover the best-performing parameter sets.
+
+   - Assess the robustness of the trading strategy across different market conditions.
+
+   - Detect overfitting by evaluating consistency in performance.
+
+   - Identify opportunities to refine the algorithm for better outcomes.
 
 ## Example Trading Algorithm
 
