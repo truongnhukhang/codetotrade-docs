@@ -4,7 +4,7 @@
 
 Deep backtesting, also known as overfit backtesting, is a technique used to evaluate and optimize trading algorithms by exploring a wide range of parameter combinations. This approach allows traders and developers to gain insights into how robust their strategies are under various conditions, helping them identify potential improvements or weaknesses.
 
-### Why Use Deep Backtesting?
+## Why Use Deep Backtesting?
 
 When designing a trading algorithm, fixed parameters may not fully capture the algorithm's potential or limitations. By systematically testing multiple combinations of parameters, deep backtesting helps:
 
@@ -46,7 +46,7 @@ In deep backtesting, the algorithm's parameters are varied systematically to cre
 
 ## How It Works
 
-### Run a deep back testing
+### Setup your backtest configuration
 
 **Exchange** : Binance Future
 

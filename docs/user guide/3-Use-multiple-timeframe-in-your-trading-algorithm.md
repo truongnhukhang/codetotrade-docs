@@ -21,17 +21,40 @@ Consider a trading strategy where:
 
 - **Buy Signal**:
     - When the **MACD** on the 1-hour timeframe satisfies `MACD > MACD_Signal`
-    - The **RSI** on the 5-minute timeframe indicates oversold conditions (`RSI < 30`).
+    - The **RSI** on the 5-minute timeframe indicates **not** overbought conditions (`RSI < 70`).
 
 - **Sell Signal**:
     - When the **MACD** on the 1-hour timeframe satisfies `MACD < MACD_Signal`
-    - The **RSI** on the 5-minute timeframe indicates overbought conditions (`RSI > 70`).
+    - The **RSI** on the 5-minute timeframe indicates **not** oversold conditions (`RSI > 30`).
 
-This approach combines a broader market perspective (1-hour MACD) with refined details from shorter timeframes (15-minute and 5-minute RSI) to enhance precision and reduce noise in decision-making.
+This approach combines a broader market perspective (1-hour MACD) with refined details from shorter timeframes (5-minute RSI) to enhance precision and reduce noise in decision-making.
 
-## How This Feature Works
+## How It Works
 
-TBD
+### Setup your backtest configuration
+
+**Exchange** : Binance Future
+
+**Coin** : BTCUSDT
+
+**Main candle interval** : 5m
+
+**Support candle intervals** : 1h
+
+**Date from**: 2024-01-01
+
+**Date to**: 2024-11-21 .
+
+**indicator params** : 
+
+```
+slow=34,49,43,55,89
+fast=9,12,17,19,25,34
+signal=9,11,17,23
+rsi=14,33,21,43
+tp=2,3,4,5,6,7
+sl=2,3,4,5,6,7
+```
 
 ## Conclusion
 
