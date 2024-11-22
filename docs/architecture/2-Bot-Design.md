@@ -29,6 +29,7 @@ graph TD
 ## BaseBot Abstract Class
 
 This an abstract class that provide
+
     - empty body (abstract) methods that need to be filled in (implemented) by the child classes.
     - BarSeries,Coin information all other attribute need for your algorithm to work.
 

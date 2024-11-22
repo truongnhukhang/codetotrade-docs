@@ -61,7 +61,11 @@ In deep backtesting, the algorithm's parameters are varied systematically to cre
 Users provide the parameter lists through  `indicator params` input field. The application automatically generates and tests all combinations.
 ![overfit-test](../assets/images/deepbacktest.png)
 
-**Important** : You need to get the right value for each parameter in the `init` function.
+### Bot Implementation Details
+
+The most important part of this example is you have to the right value in the `init` function.
+
+#### init(Map<String, String> config | Dict[str,str] config)
 ```java
 @Override
 public void init(Map<String, String> config) {
