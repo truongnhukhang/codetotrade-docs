@@ -149,3 +149,11 @@ The indicators visualization in handled in the `init` method of your bot.
 ## Conclusion
 
 As you see the draw chart feature help us understand the market better. Just little bit of coding is required in practice and you are ready to go.
+
+
+## Appendix
+### Source code
+=== "Java"
+[ChartingBot](https://github.com/truongnhukhang/codetotrade-java-example/blob/master/src/main/java/coin/algorithm/example/bot/MyChartingBot.java)
+=== "Python"
+[ChartingBot](https://github.com/truongnhukhang/codetotrade-python-example/blob/master/src/bot/my_charting_bot.py)

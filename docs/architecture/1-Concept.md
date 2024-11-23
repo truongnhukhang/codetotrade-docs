@@ -56,7 +56,7 @@ Plot is an object contain the values of the indicator and it's metadata. We supp
 
 - Line: The plot will be display as a line chart.
 
-- Column: The plot will be display as a column chart.
+- Column: The plot will be display as a column chart (histogram chart).
 
 ```json
 {
