@@ -4,7 +4,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/code
-  favicon: assets/images/logo.png
+  favicon: assets/images/logo-circle.png
   features:
     - navigation.expand
     - navigation.path

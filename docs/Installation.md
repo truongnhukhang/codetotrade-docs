@@ -1,7 +1,7 @@
 # Installation
 
 ## Download CodeToTrade App
-Download the zip file from [CodeToTrade Windows Installer](https://codetotrade.app/download/).
+Download the zip file from [CodeToTrade Download page](https://codetotrade.app/download/).
 
 ### Windows
 1. Unzip andRun  `codetotrade-pro.exe` 
