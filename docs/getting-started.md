@@ -24,7 +24,7 @@ You can run from command line or Use IDE to start the main file (Inteliji or PyC
 ### Create a back test request
 - Go to : http://localhost:8080/backtest/create
 - Keep Exchange Config default 
-- Inuput Algorithm Config same as below picture  
+- Input Config same as below picture  
 ![algo-config](assets/images/algorithm-config.png)
 - Then submit
 
