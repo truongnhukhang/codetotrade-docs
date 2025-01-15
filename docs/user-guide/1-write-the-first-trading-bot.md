@@ -275,13 +275,10 @@ Fristly . You need swap back_test_server to the exchange server and run the bot.
 
 Then go to the exchange page in the UI and run the bot `http://localhost:8080/online/create` 
 
-Exchange Config same as below picture ( nothing much different with back test config except we dont have date range )
+Config same as below picture ( nothing much different with back test config except we dont have date range )
 
-![back-test-result](../assets/images/example/real-trade-setup.png)
+![trade-setup](../assets/images/example/trade-setup.png)
 
-The Algorithm Config is the same when we run the back testing
-
-![algorithm-config](../assets/images/example/macd-config.png)
 
 ## Appendix
 ### Source code

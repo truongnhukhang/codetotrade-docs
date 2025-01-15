@@ -55,6 +55,8 @@ rsi=14,33,21,43
 tp=2,3,4,5,6,7
 sl=2,3,4,5,6,7
 ```
+![mutil-timeframe-test](../assets/images/mutil-timeframe-test.png)
+
 ### Bot Implementation Details
 
 The most important part of this guide is understanding how to use the other timeframe BarSeries to support your trading algorithm.
