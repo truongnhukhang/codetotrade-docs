@@ -31,7 +31,7 @@ chmod +x codetotrade-pro
 1. Install Docker
 2. Run the following command to start the app
 ```Bash
-docker run -p 8080:8080 -v .:/home/codetotrade/.codetotrade -d codetotrade/codetotrade-pro:v1
+docker run -p 8080:8080 -v .:/home/codetotrade/.codetotrade -d codetotrade/codetotrade-pro
 ```
 3. Go to localhost:8080 to use the app
 
