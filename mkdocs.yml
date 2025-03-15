@@ -40,3 +40,5 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - md_in_html
+extra_javascript:
+  - https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js   
