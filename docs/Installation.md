@@ -32,8 +32,18 @@ chmod +x codetotrade-pro
 2. Run the following command to start the app
 ```Bash
 docker run -p 8080:8080 -v .:/home/codetotrade/.codetotrade -d codetotrade/codetotrade-pro
+
 ```
 3. Go to localhost:8080 to use the app
+#### Docker Note : 
+
+##### User data volume
+
+All generated data by user will be store in /home/codetotrade/.codetotrade folder in container . you can mount it to the host volume
+
+##### Connect to client
+
+Instead connect to client by localhost:[your_back_test_port] , you should replace it by host.docker.internal:[your_back_test_port]
 
 
 
